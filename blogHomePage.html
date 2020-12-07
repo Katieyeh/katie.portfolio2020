@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="_css/bootstrap.min.css">
+    <link rel="stylesheet" href="blogHomePage.css">
+    <script src="_js/jquery.min.js"></script>
+    <script src="_js/popper.min.js"></script>
+    <script src="_js/bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#mylist">
+    <div class="container-fluid p-0">
+        <!-- 最上面navbar -->
+        <nav class="navbar navbar-expand-lg d-flex sticky-top">
+            <div class="container">
+                <!-- nav-首頁logo -->
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="navbar-brand " href="#">
+                            <img src="Link/logo.svg" width="120"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </li>
+                </ul>
+                <!-- nav-search-icon -->
+                <ul class=" navbar-nav ml-auto">
+                    <li class="s-icon">
+                        <input type="text" placeholder="Search . . ." required>
+                    </li>
+                </ul>
+                <span id="bugerIcon" onclick="openNav()">&#9776;</span>
+
+
+            </div>
+
+        </nav>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="web.html#index">HOME</a>
+                <a href="web.html#profile">PROFILE</a>
+                <a href="web.html#works">WORKS</a>
+                <a href="blogHomePage.html">BLOG</a>
+                <a href="web.html#contact">CONTACT</a>
+            </div>
+        </div>
+        <div id="content" class="row">
+            <!-- 文章區 -->
+            <div id="title" class="col-xl-8">
+                <div id="bigTitle" class="text-start col-xl-12">
+                    <h3 >/ BLOG /</h3>
+                </div>
+                <div>
+                    <ul class="row blog-list mt-5">
+                        <li class="col-xl-9 m-auto">
+                            <a href="blogPage1.html">
+                                <section class="d-flex">
+                                    <div id="blog-left" class="align-self-center justify-content-start  mr-5">
+                                        <p class="ml-5">
+                                            <img width="160" height="160"
+                                                src="img/photography/IMG_0483.JPG"
+                                                class="attachment-thumbnail size-thumbnail wp-post-image">
+                                        </p>
+                                    </div>
+                                    <div id="blog-right" class="align-self-center ml-4">
+                                        <div class="mr-5">
+                                            <span class="blog-date">2020.9.10</span>
+                                            <div class="blog-category">
+                                                <small>天氣晴</small>
+                                            </div>
+                                            <h4>台中網美店</h4>
+                                            <p class="blog-excerpt">吃早餐，配網美</p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </a>
+                        </li>
+                        <li class="col-xl-9 m-auto">
+                            <a href="blogPage2.html">
+                                <section class="d-flex">
+                                    <div id="blog-left" class="align-self-center justify-content-start  mr-5">
+                                        <p class="ml-5">
+                                            <img width="160" height="160"
+                                                src="img/photography/166929D8-BB9D-4E84-B6BE-D3DB9F31C0CE.JPG"
+                                                class="attachment-thumbnail size-thumbnail wp-post-image">
+                                        </p>
+                                    </div>
+                                    <div id="blog-right" class="align-self-center ml-4">
+                                        <div class="mr-5">
+                                            <span class="blog-date">2020.9.08</span>
+                                            <div class="blog-category">
+                                                <small>天氣陰</small>
+                                            </div>
+                                            <h4>忘憂谷一日遊</h4>
+                                            <p class="blog-excerpt">遇到休耕，一根稻草都沒有，只有苦笑的我</p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </a>
+                        </li>
+                        <li class="col-xl-9 m-auto">
+                            <a href="blogPage3.html">
+                                <section class="d-flex">
+                                    <div id="blog-left" class="align-self-center justify-content-start  mr-5">
+                                        <p class="ml-5">
+                                            <img width="160" height="160"
+                                                src="img/photography/IMG_0646.JPG"
+                                                class="attachment-thumbnail size-thumbnail wp-post-image">
+                                        </p>
+                                    </div>
+                                    <div id="blog-right" class="align-self-center ml-4">
+                                        <div class="mr-5">
+                                            <span class="blog-date">2020.9.02</span>
+                                            <div class="blog-category">
+                                                <small>天氣晴</small>
+                                            </div>
+                                            <h4>程式寫不出來怎麼辦？</h4>
+                                            <p class="blog-excerpt">那就放下電腦，立定成佛，看看天空，不讓眼淚流下</p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </a>
+                        </li>
+                        <li class="col-xl-9 m-auto">
+                            <a href="blogPage4.html">
+                                <section class="d-flex">
+                                    <div id="blog-left" class="align-self-center justify-content-start  mr-5">
+                                        <p class="ml-5">
+                                            <img width="160" height="160"
+                                                src="img/photography/IMG_0881.JPG"
+                                                class="attachment-thumbnail size-thumbnail wp-post-image">
+                                        </p>
+                                    </div>
+                                    <div id="blog-right" class="align-self-center ml-4">
+                                        <div class="mr-5">
+                                            <span class="blog-date">2020.8.31</span>
+                                            <div class="blog-category">
+                                                <small>天氣晴</small>
+                                            </div>
+                                            <h4>台幣戰士-OUTLET篇</h4>
+                                            <p class="blog-excerpt">想著要買爆整座outlet，但摸摸口袋...只好假裝在拍摩天輪，才不會讓眼淚往下流</p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                    
+                
+
+            </div>
+            <!-- 側邊列表區 -->
+            <div id="sideRight" class="col-xl-4">
+                <div id="sideList">
+                    <div>
+                        <p>/ Recent Entry 近期更新 /</p>
+                    </div>
+                    <div id="listTitle">
+                        <li><a href="blogPage1.html">/ 台中網美店</a></li>
+                        <li><a href="blogPage2.html">/ 忘憂谷一日遊</a></li>
+                        <li><a href="blogPage3.html">/ 程式寫不出來怎麼辦？</a></li>
+                        <li><a href="blogPage4.html">/ 台幣戰士-OUTLET篇</a></li>
+                        <li><a href="blogPage4.html">/ 台幣戰士-日本篇</a></li>
+                    </div>
+                </div>
+                <div id="sideList" class="mt-5">
+                    <div>
+                        <p>/ Category 文章類別 /</p>
+                    </div>
+                    <div id="listTitle">
+                        <li>/ 旅行遊記</li>
+                        <li>/ 插畫心得</li>
+                        <li>/ 美食地圖</li>
+                        <li>/ 程式系列</li>
+                        <li>/ 雜七雜八</li>
+                    </div>
+                </div>
+                <div id="sideList" class="mt-5">
+                    <div>
+                        <p>/ Keywords 關鍵字分類 /</p>
+                    </div>
+                    <div id="keyWords">
+                        <span>
+                            <input type="checkbox" name="type01" id="t01"></input>
+                            <label for="t01">遊記</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="type02" id="t02"></input>
+                            <label for="t02">插畫</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="type03" id="t03"></input>
+                            <label for="t03">美食</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="type04" id="t04"></input>
+                            <label for="t04">程式</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="type05" id="t05"></input>
+                            <label for="t05">雜記</label>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="footer">
+            <div>
+                <p class="m-0 pm-5">Copyright © 2020 Katie Yeh</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="blogPage.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="_css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="_js/jquery.min.js"></script>
+    <script src="_js/popper.min.js"></script>
+    <script src="_js/bootstrap.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target="#mylist">
+    <div class="container-fluid p-0">
+        <!-- 最上面navbar -->
+        <nav class="navbar navbar-expand-lg  sticky-top">
+            <div class="container">
+                <!-- nav-首頁logo -->
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="navbar-brand " href="#">
+                            <img src="Link/logo.svg" width="120"></a>
+                    </li>
+                </ul>
+                <!-- nav-search-icon -->
+                <ul id="searchIcon" class=" navbar-nav">
+                    <li class="s-icon">
+                        <input type="text" placeholder="Search . . ." required>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- 首頁 -->
+        <div id="index" class="row container-fluid d-flex text-right justify-content-end">
+            <!-- 首頁圖片文字-->
+            <div id="textArea" class="d-flex align-self-center col-sm-12">
+                <div id="textInfo" class="text-center align-self-center">
+                    <h3>/ Live A Life </h3><br>
+                    <h3>You Will</h3>
+                    <h3>Remember. /</h3>
+                </div>
+            </div>
+        </div>
+        <!-- 導覽頁滑上去釘選在最上面，加上監聽功能，網頁滑到該區段會變色 -->
+        <!-- 使用nav-pills，視窗縮小變成漢堡選單 -->
+        <!-- 滑上去後與最上面的nav-bar合在一起，縮小寬度 -->
+        <nav class="nav nav-pills  sticky-top navbar-light navbar-expand-lg d-flex justify-content-center" 
+        id="mylist">
+            <!-- 漢堡選單 -->
+            <button class="navbar-toggler" id="navbar-toggler2" data-toggle="collapse" type="button"
+                data-target="#topnavbarCollapse">
+                <span class="navbar-toggler-icon text-right"></span>
+            </button>
+            <!-- 置頂導覽頁 -->
+            <ul id='topnavbarCollapse' class="nav nav-pills active pt-3">
+                <li> <a href="#profile" class="nav-link"> PROFILE </a></li>
+                <li> <a href="#works" class="nav-link"> WORKS </a></li>
+                <li> <a href="#blogTitle" class="nav-link"> BLOG</a></li>
+                <li> <a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!-- 自傳頁  -->
+        <div id="profile">
+            <div class="col-12 pt-1">
+                <h3 class="pt-5 mt-5 mb-5 text-center">/ PROFILE /</h3>
+            </div>
+            <div class="row d-flex pt-5">
+                <div id="profileImg" class=" col-lg-4 text-center mt-2">
+                    <!-- 放入插圖 -->
+                    <img src="img/illustrator/profile.jpg">
+                </div>
+                <div id="colorBlock"></div>
+
+
+                <!-- 輪播圖效果 -->
+                <div id="aboutMe" class=" col-lg-8 mt-2 carousel slide justify-content-center d-flex text-center "
+                    data-ride="carousel">
+                    <!-- slider -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#aboutMe" data-slide-to="0" class="active">
+                        </li>
+                        <li data-target="#aboutMe" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner col-8 align-self-center text-center" role="listbox">
+                        <div class=" carousel-item active">
+                            <h4>- ABOUT ME -</h4>
+                            <p class="mt-5">
+                                1994年生，比起一成不變，更喜歡充滿挑戰的生活，<br>
+                                "如果你勇敢，你就是自由",是我很喜歡的一段話，<br>
+                                於是在23歲那年給自己一個機會到國外闖蕩，<br>
+                                不侷限在自己的舒適圈，第一步總是最難，<br>
+                                持續期許自己，不要回頭看，<br>
+                                努力向前尋找那些會讓我回味無窮的日子。
+                            </p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <h4>- Work Experience -</h4>
+                            <ul class="mt-5">
+                                <li class="text-left">
+                                    <h5>2017/3-2020/3 隆典集團 越南廠區</h5>
+                                    <p>Under Armour品牌 QA高級專員</p>
+                                    <p>主要擔任工廠與品牌之間溝通對外窗口、
+                                        分析品質異常問題、規劃內部培訓計畫以及處理客訴問題，
+                                        以公司立場出發，與客戶溝通協調，降低整體損失。</p>
+                                </li>
+                                <li class="text-left">
+                                    <h5>2016/8 - 2017/2 棉花田婚紗工作室</h5>
+                                    <p>修片/美編師/Facebook粉絲團小編</p>
+                                    <p>負責協助客戶溝通修片風格以及美編相本，
+                                        即時依照客戶需求進行客變，另外針對店內特殊活動製作活動banner，
+                                        並管理粉絲團整體風格一致。</p>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <!-- 換頁按鈕 -->
+                    <a id="sliderBtn" class="carousel-control-prev" href="#aboutMe" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a id="sliderBtn" class="carousel-control-next" href="#aboutMe" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 作品區 -->
+        <div id="works" class="row">
+            <div class="col-12">
+                <h3 class="pt-5 mt-3 text-center">/ WORKS /</h3>
+            </div>
+            <nav class="card text-align mt-3 ">
+                <div class="card-header sticky-top navbar navbar-dark navbar-expand-lg">
+                    <!-- 縮小後出現漢堡選單 -->
+                    <button class="navbar-toggler" id="navbar-toggler3" data-toggle="collapse" type="button"
+                        data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- 標題欄頁籤 -->
+                    <div id="navbarCollapse" class="nav nav-tabs card-header-tabs">
+
+                        <a class="nav-item nav-link" data-toggle="tab" href="#graphic">GRAPHIC</a>
+
+                        <a class="nav-item nav-link" data-toggle="tab" href="#illustrator">ILLUSTRATOR</a>
+
+                        <a class="nav-item nav-link" data-toggle="tab" href="#photography">PHOTOGRAPHY</a>
+
+                        <a class="nav-item nav-link" data-toggle="tab" href="#animation">ANIMATION</a>
+                    </div>
+                </div>
+
+                <!-- 頁簽內容 -->
+                <div class="tab-content p-3">
+                    <!-- 平面設計區 -->
+                    <div id="graphic" class="tab-pane active row">
+                        <div class="card-body col-xl-12 d-flex">
+                            <div class="card-columns row justify-content-center">
+                                <!-- 點圖放大加入JS function -->
+                                <div class="card">
+                                    <img src="img/design/0a43ed93471121.5e6602aadd4c5.png"
+                                        alt="Wedding Stuio Sign Mockup" onclick="myFunction(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/design/0cffa993471121.5e6602ab58aaa (1).png"
+                                        alt="Wedding Stuio Sign Mockup" onclick="myFunction(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/design/3e9bf893471121.5e6602ab591e1.png"
+                                        alt="Wedding Stuio Bag Mockup" onclick="myFunction(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/design/c8366a93471121.5e6602ab57d74 (1).jpg"
+                                        alt="Wedding Stuio Namecard Mockup" onclick="myFunction(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/design/5791ef93471121.5e6602ab58361.png" alt="Poster"
+                                        onclick="myFunction(this);">
+                                </div>
+
+                                <div class="card">
+                                    <img src="img/design/截圖 2020-09-08 上午8.56.12.png" alt="Wedding Stuio Logo"
+                                        onclick="myFunction(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/design/作品集2020-Final.jpg" alt="Protfolio 2020"
+                                        onclick="myFunction(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/design/截圖 2020-09-09 下午10.00.49.png" alt="Protfolio 2016"
+                                        onclick="myFunction(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/design/1.jpg" alt="Poster" onclick="myFunction(this);">
+                                </div>
+
+                            </div>
+                            <!-- 點選圖片時顯示放大 -->
+                            <div id="showup" class="container">
+                                <!-- Close the image -->
+                                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+                                <!-- Expanded image -->
+                                <img id="expandedImg" style="width:100%">
+
+                                <!-- Image text -->
+                                <div id="imgtext"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 插畫區 -->
+                    <div id="illustrator" class="tab-pane fade">
+                        <div class="card-body d-flex">
+                            <div class="card-columns row justify-content-center">
+                                <div class="card">
+                                    <img src="img/illustrator/未命名的作品 1.jpg" alt="None, procreate"
+                                        onclick="myFunction2(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/illustrator/a400c993471353.5e66043cd6712.jpeg" alt="Sister, procreate"
+                                        onclick="myFunction2(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/illustrator/d0924593471353.5e66043cd5ff6.jpeg"
+                                        alt="Happy New Year, procreate" onclick="myFunction2(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/illustrator/e1caad93471353.5e66043cd4a64.jpeg"
+                                        alt="Dot.Line.Surface, procreate" onclick="myFunction2(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/illustrator/20200104.jpg" alt="Alex, procreate"
+                                        onclick="myFunction2(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/illustrator/e3ce2093471353.5e66043cd51e7.jpeg"
+                                        alt="To-Do List, procreate" onclick="myFunction2(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/illustrator/束口袋.jpg" alt="Don't Bother Me, AI"
+                                        onclick="myFunction2(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/illustrator/截圖 2020-09-09 下午10.17.31.png" alt="Bread, Hand-drawn"
+                                        onclick="myFunction2(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/illustrator/截圖 2020-09-09 下午10.18.13.png" alt="Fruit Tart, Hand-drawn"
+                                        onclick="myFunction2(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/illustrator/截圖 2020-09-09 下午10.18.50.png" alt="Cupcakes, Hand-drawn"
+                                        onclick="myFunction2(this);">
+                                </div>
+
+                            </div>
+                            <!-- 點選圖片時顯示放大 -->
+                            <div id="showup" class="container">
+                                <!-- Close the image -->
+                                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+                                <!-- Expanded image -->
+                                <img id="expandedImg2" style="width:100%">
+
+                                <!-- Image text -->
+                                <div id="imgtext2"></div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!-- 攝影區 -->
+                    <div id="photography" class="tab-pane fade">
+                        <div class="card-body d-flex">
+                            <div class="card-columns row justify-content-center">
+                                <div class="card">
+                                    <img src="img/photography/01ee0b24052237.5e66208148794.jpg" alt="Kyoto, Japan, 2015"
+                                        onclick="myFunction3(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/photography/3805d824052237.5e6609a600717.jpeg"
+                                        alt="Osaka, Japan, 2018" onclick="myFunction3(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/photography/49a62724052237.5e65b06321dee.jpg" alt="HCM, Vietnam, 2018"
+                                        onclick="myFunction3(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/photography/55852b24052237.5e65b06324574.jpg"
+                                        alt="Hanoi, Vietnam, 2018" onclick="myFunction3(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/photography/79249024052237.5e65b06324e16.jpeg"
+                                        alt="HCM, Vietnam, 2018" onclick="myFunction3(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/photography/7948f824052237.5e65b06327469.jpg"
+                                        alt="Hanoi, Vietnam, 2018" onclick="myFunction3(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/photography/8704b824052237.5e65b06322dce.jpg" alt="HCM, Vietnam, 2018"
+                                        onclick="myFunction3(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/photography/94f9a524052237.5e65b06326b00.jpg" alt="HCM, Vietnam, 2018"
+                                        onclick="myFunction3(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/photography/a87e2e24052237.5e660799ad23f.jpeg"
+                                        alt="Tokyo, Japan, 2019" onclick="myFunction3(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/photography/b8ffaa24052237.5e65b0632356f.jpg" alt="HCM, Vietnam, 2018"
+                                        onclick="myFunction3(this);">
+                                </div>
+                                <div class="card">
+                                    <img src="img/photography/fab0b424052237.5e65b06325da2.jpg"
+                                        alt="Hanoi, Vietnam, 2018" onclick="myFunction3(this);">
+                                </div>
+
+                                <div class="card">
+                                    <img src="img/photography/123.JPG" alt="Taichung, Taiwan, 2020"
+                                        onclick="myFunction3(this);">
+                                </div>
+
+                            </div>
+                            <!-- 點選圖片時顯示放大 -->
+                            <div id="showup" class="container">
+                                <!-- Close the image -->
+                                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+                                <!-- Expanded image -->
+                                <img id="expandedImg3" style="width:100%;">
+
+                                <!-- Image text -->
+                                <div id="imgtext3"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- 動畫區 -->
+                    <div id="animation" class="tab-pane fade">
+                        <div class="card-body col-xl-12">
+                            <!-- insert YouTube video -->
+                            <!-- 要給一整個12欄位，才會一起RWD -->
+                            <iframe class="col-xl-12" width="1000" height="400"
+                                src="https://www.youtube.com/embed/fbp0860BFbM" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <h5 class="text-center mt-5 mb-5">"如果您也喜歡這支影片請至我們的Behance查看更詳細的內容"<br>
+                                <br>"If you like this video,<br>
+                                please come to check more detail from our Behance,thank you!"</h5>
+                            <a href="https://www.behance.net/gallery/83690471/-The-head"><button
+                                    class="btn btn-outline-warning d-block" style="margin: auto;">WATCH
+                                    MORE</button></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <p id="blogTitle"></p>
+
+        <!-- blog -->
+        <div id="blog">
+            <div class="text-center">
+                <h3 class="pt-2 mt-2">/ BLOG /</h3>
+            </div>
+
+            <div>
+                <ul class="row blog-list mt-5">
+                    <li class="col-xl-9 m-auto">
+                        <a href="blogPage1.html">
+                            <section class="d-flex">
+                                <div id="blog-left" class="align-self-center justify-content-start  mr-5">
+                                    <p class="ml-5">
+                                        <!-- 給圖片固定寬高 -->
+                                        <img width="160" height="160" src="img/photography/IMG_0483.JPG"
+                                            class="attachment-thumbnail size-thumbnail wp-post-image">
+                                    </p>
+                                </div>
+                                <div id="blog-right" class="align-self-center ml-4">
+                                    <div class="mr-5">
+                                        <span class="blog-date">2020.9.10</span>
+                                        <div class="blog-category">
+                                            <small>天氣晴</small>
+                                        </div>
+                                        <h4>台中網美店</h4>
+                                        <p class="blog-excerpt">吃早餐，配網美</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </a>
+                    </li>
+                    <li class="col-xl-9 m-auto">
+                        <a href="blogPage2.html">
+                            <section class="d-flex">
+                                <div id="blog-left" class="align-self-center justify-content-start  mr-5">
+                                    <p class="ml-5">
+                                        <img width="160" height="160"
+                                            src="img/photography/166929D8-BB9D-4E84-B6BE-D3DB9F31C0CE.JPG"
+                                            class="attachment-thumbnail size-thumbnail wp-post-image">
+                                    </p>
+                                </div>
+                                <div id="blog-right" class="align-self-center ml-4">
+                                    <div class="mr-5">
+                                        <span class="blog-date">2020.9.08</span>
+                                        <div class="blog-category">
+                                            <small>天氣陰</small>
+                                        </div>
+                                        <h4>忘憂谷一日遊</h4>
+                                        <p class="blog-excerpt">遇到休耕，一根稻草都沒有，只有苦笑的我</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </a>
+                    </li>
+                    <li class="col-xl-9 m-auto">
+                        <a href="blogPage3.html">
+                            <section class="d-flex">
+                                <div id="blog-left" class="align-self-center justify-content-start  mr-5">
+                                    <p class="ml-5">
+                                        <img width="160" height="160" src="img/photography/IMG_0646.JPG"
+                                            class="attachment-thumbnail size-thumbnail wp-post-image">
+                                    </p>
+                                </div>
+                                <div id="blog-right" class="align-self-center ml-4">
+                                    <div class="mr-5">
+                                        <span class="blog-date">2020.9.02</span>
+                                        <div class="blog-category">
+                                            <small>天氣晴</small>
+                                        </div>
+                                        <h4>程式寫不出來怎麼辦？</h4>
+                                        <p class="blog-excerpt">那就放下電腦，立定成佛，看看天空，不讓眼淚流下</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </a>
+                    </li>
+                    <li class="col-xl-9 m-auto">
+                        <a href="blogPage4.html">
+                            <section class="d-flex">
+                                <div id="blog-left" class="align-self-center justify-content-start  mr-5">
+                                    <p class="ml-5">
+                                        <img width="160" height="160" src="img/photography/IMG_0881.JPG"
+                                            class="attachment-thumbnail size-thumbnail wp-post-image">
+                                    </p>
+                                </div>
+                                <div id="blog-right" class="align-self-center ml-4">
+                                    <div class="mr-5">
+                                        <span class="blog-date">2020.8.31</span>
+                                        <div class="blog-category">
+                                            <small>天氣晴</small>
+                                        </div>
+                                        <h4>台幣戰士-OUTLET篇</h4>
+                                        <p class="blog-excerpt">想著要買爆整座outlet，但摸摸口袋...只好假裝在拍摩天輪，才不會讓眼淚往下流</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="blogHref" class="text-right mt-3">
+                <a href="blogHomePage.html">/ VIEW MORE +</a>
+            </div>
+
+        </div>
+
+
+        <div id="contact">
+            <div class="text-center">
+                <h3 class="pt-5 mt-3">/ CONTACT /</h3>
+            </div>
+            <div id="infoArea" class="m-5 row">
+                <div id="contact-left" class="col-lg-6 mt-5 mb-5 text-center">
+                    <h5 id="ctImgtitle" class="mt-3 pt-5">/ Find Me Here </h5>
+                    <div id="contactImg" class="d-flex">
+                        <ul class="m-auto p-0">
+                            <li>
+                                <a
+                                    href="https://issuu.com/katieyeh0419?issuu_product=header&issuu_subproduct=pricing_upgrade&issuu_context=link&issuu_cta=profile">
+                                    <img src="Link/issuu.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/ping-chun-yeh-666602198/">
+                                    <img src="link/linkedin.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.behance.net/katieyeh0419">
+                                    <img src="link/behance.svg" alt="">
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=100000039476516">
+                                    <img src="link/facebook.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div id="contact-right" class="col-lg-6 mt-5 mb-5  text-center">
+                    <h5 class="mt-3 ">/ Contact Me </h5>
+                    <div id="textBox">
+                        <form class="text-left">
+                            <br><br><br>
+                            <label for="userName">NAME :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
+                            <input type="text">
+                            <br><br>
+                            <label for="userEmail">EMAIL :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                            <input type="text">
+                            <br><br>
+                            <label for="userComment">COMMENT :&nbsp; &nbsp; &nbsp; </label>
+                            <input id="comment" type="text">
+                        </form>
+                    </div>
+                    <button id="submitBtn" onclick=showMeg()>SUBMIT</button>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="footer">
+            <div>
+                <p class="m-0 pm-5">Copyright © 2020 Katie Yeh</p>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

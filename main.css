@@ -1,0 +1,646 @@
+/* 主要字型 */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+TC&display=swap');
+
+body,button, input, section, textarea,h1 ,h2, h3, h4, h5, h6, div{ 
+    font-family: 'EB Garamond', serif;
+}
+body{
+    background-color:#f3f3f3;
+}
+.navbar{
+    background-color: #f3f3f3;
+    width: 100%;
+}
+
+/* 搜尋i-con */
+#searchIcon{
+    margin-right:70px
+}
+.s-icon {
+    display: inline-block;
+    filter: drop-shadow(0 1px #686b62);
+}
+
+.s-icon:after {
+    content: "";
+    background: #686b62;
+    width: 1.5px;
+    height: 10px;
+    position: absolute;
+    top: 18px;
+    right: -2px;
+    transform: rotate(135deg);
+
+}
+
+.s-icon>input {
+    color: #686b62;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    padding: 9px;
+    border: solid 1.5px #686b62;
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+    font-size: 10px;
+
+
+}
+
+.s-icon>input::placeholder {
+    color: #b7b9aea6;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
+
+.s-icon>input:focus::placeholder {
+    opacity: 1;
+}
+
+.s-icon>input:focus,
+.s-icon>input:not(:placeholder-shown) {
+    width: 150px;
+}
+/* 首頁 */
+#index{
+    min-height: 650px; 
+    background-color: #f3f3f3; 
+    background-image: url(img/photography/01ee0b24052237.5e66208148794.jpg);
+    background-size:97%; 
+    background-repeat: no-repeat;
+    background-position:center;
+    margin: 0;
+    position: relative;
+}
+/* 首圖文字區 */
+#textArea{
+    position: absolute;
+    justify-content:center ;
+}
+/* 首圖文字內容 */
+#textInfo{
+    border: #cdc7b9 4px solid;
+    box-shadow:4px 3px #c48468; 
+    width: 350px;
+    height: 350px;
+    margin-top: -100px;
+    margin-left: 60px;
+}
+#index h3{
+    text-shadow:4px 3px #c48468; 
+    font-size: 60px; color: #cdc7b9;
+    margin: auto;
+    line-height: 6.5rem;
+}
+/* 滑動後釘選在畫面上方的nav-bar */
+#mylist{
+    max-height: 150px; 
+    width:45%; 
+    margin:auto;
+}
+/* 滑動到該頁面nav-bar該頁面標籤變色 */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #f3f3f3;
+    color: #c48468;
+    
+}
+/* nav-bar words */
+.nav-pills .nav-link, .nav-pills .show>.nav-link{
+    color:#686b62;
+}
+
+#topnavbarCollapse>li>a{
+    font-weight: bold;
+}
+
+
+/* nav-bar RWD */
+@media screen and (max-width:991px){
+    /* 一開始隱藏漢堡選單 */
+    #navbar-toggler2{
+        border:none;
+        margin-top: 17px;
+        margin-left: 88%;
+        margin-right: auto;  
+    } 
+    #mylist{
+        max-height: 150px; 
+        width:100%; 
+        margin:auto;
+        
+    }
+    #topnavbarCollapse{
+        background-color: #e7e6e6e7;
+        border-radius: 5px 5px;
+        height: 60px;
+        width: 400px;
+        justify-content: center;
+        font-size: 15px;
+        margin-left: 15%; 
+        margin-right: 20px;
+    }
+    #topnavbarCollapse>li>a{
+        font-size: 14px;
+    }
+    #index{
+        background-size: cover;
+
+    }
+    #textArea{
+        align-self: center;
+    }
+    #index>div>div>h3{
+        font-size:55px;
+    }
+}
+/* 螢幕放大時要顯示出來 */
+@media screen and (min-width:991px){
+    #topnavbarCollapse{
+        display: flex;
+        
+    }
+}
+
+/*  */
+/* profile位置 */
+#profile{
+    margin-top:100px;
+    height: 100%;
+}
+/* profile標題顏色 */
+#profile >div> h3{
+    color: #686b62;
+    font-weight: bolder;
+}
+#profile > div:nth-child(2){
+    margin-bottom: 100px;
+}
+
+#aboutMe{
+    width: 100%; 
+    color:#928b79 ;
+}
+#profileImg>img{
+    width: 300px;
+    height: 400px;
+}
+
+.carousel-indicators>.active{
+    background-color: #c48468;
+}
+.carousel-indicators>li{
+    background-color: #c0a498;
+}
+.carousel-item{
+    text-align: center;
+    width: 100%;
+    /* height: 100%; */
+    z-index: 10;
+}
+.carousel-item>ul>li{
+    width:100%;
+    
+}
+#profileImg{
+    z-index: 10;
+    position: relative;
+}
+/* 底圖色塊 */
+#colorBlock{
+    height: 400px;
+    width:300px;
+    background-color: #cdc7b94b;
+    z-index: 0;
+    background-position: top;
+    margin-top: 60px;
+    margin-left: 150px;
+    position: absolute;
+}
+
+/* 更換輪播圖箭頭圖示 */
+.carousel-control-prev-icon {
+    background-image: url("Link/narrow_L.svg");
+    width: 30px;
+    height: 30px;
+}
+.carousel-control-next-icon{
+    background-image: url("Link/narrow_R.svg");
+    width: 30px;
+    height: 30px;
+}
+
+
+@media screen and (max-width:991px){
+    #aboutMe{
+        margin-top: 20px;
+        align-self: center;
+        margin-bottom: 100px;
+    }
+    #profile{
+        margin-top:-20px;
+        padding-top:-10px;
+        margin-bottom: 200px;
+    }
+    .carousel-item{
+        text-align: center;
+        margin-top: 80px;
+        width: 100%;
+        height:100%;
+        font-size: 14px;
+    }
+    .carousel-item>ul>li{
+        width: 100%;
+        height:100%;
+        font-size: 14px;
+    }
+    
+    #profileImg{
+        align-self: center;
+        position: relative; 
+    }
+    #colorBlock{
+        position: absolute;
+        display: none;
+    }
+    #profile > div:nth-child(2){
+        margin-bottom: 30px;
+    }
+    #profile{
+        height: 1000px;
+    }
+    
+}
+
+#works{
+    margin-top:50px;
+    height:800px;
+    margin-bottom: 50px;
+}
+/* works標題顏色 */
+#works >div> h3{
+    color: #686b62;
+    font-weight: bolder;
+}
+/* nav-tab區塊 */
+#works>nav{
+    width:1170px; 
+    height: 700px; 
+    margin: auto; 
+    background-color: #f3f3f3; 
+    overflow: scroll;
+}
+/* nav-tab標題區 */
+#works>nav>div:first-child{
+    /* 設z-index讓nav-tab往上滑在nav-bar下面 */
+    z-index:2; 
+    right:0; 
+    left:0; 
+    background-color: #928b79;
+}
+/* 卡片大小 */
+.card-columns> .card{
+    
+    width:300px; 
+    height:200px; 
+    border: none;
+    margin-top:30px;
+    position: relative;
+    margin: 10px;
+    background-color: #928b79;    
+}
+#navbarCollapse>a{
+    color: #cdc7b9;
+}
+
+
+
+/* card圖片放大效果 */
+/* Style the images inside the grid */
+.card-columns>.card img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    object-fit: cover;
+}
+
+.card-columns>.card img:hover {
+    opacity: 5;
+}
+
+
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+#showup {
+    margin-top:50px;
+    position: relative;
+    display: none;
+    min-width:450px;
+    
+    
+}
+
+
+/* Expanding image text */
+#imgtext, #imgtext2, #imgtext3{
+    margin-top:10px;
+    position: absolute;
+    color: #928b79;
+    font-size: 16px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    color: #f3f3f3;
+    font-size: 25px;
+    cursor: pointer;
+}
+.btn-outline-warning {
+    color: #c48468;
+    border-color: #a87159;
+}
+/* 按鈕顏色 */
+.btn-outline-warning:hover {
+  color: #f3f3f3;
+  background-color: #c48468;
+  border-color: #a87159;
+}
+/* 按鈕按下去外框顯現的顏色 */
+.btn-outline-warning:focus, .btn-outline-warning.focus {
+  box-shadow: 0 0 0 0.2rem rgba(241, 101, 66, 0.5);
+}
+/* 按鈕按下去換顏色 */
+.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active,
+.show > .btn-outline-warning.dropdown-toggle {
+  color: #212529;
+  background-color: #a87159;
+  border-color: #a87159;
+}
+
+#animation>div>a{
+    text-decoration: none;
+}
+  
+
+
+
+
+@media screen and (max-width:576px){
+    #works{
+        margin-top:0;
+    }
+    #navbarCollapse{ 
+        font-size: 14px; 
+    }
+    #navbar-toggler3{
+        border:none
+    } 
+}
+
+@media screen and (min-width:576px){
+    #navbarCollapse{
+        display: flex;
+    }
+}
+
+.nav-tabs .nav-link.active{
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
+}
+/* blog標題顏色 */
+#blog >div> h3{
+    color: #686b62;
+    font-weight: bolder;
+}
+
+ul li{
+    list-style-type:none
+}
+#blog{
+    height: 120%;
+    margin-top:200px; 
+    margin-bottom: 50px;
+}
+#blog>div>ul>li{
+    border-top: solid 1px #e8e8e8;   
+}
+#blog>div>ul>li:last-child{
+    border-bottom: solid 1px #e8e8e8;
+}
+#blog>div>ul>li:hover{
+    background-color: 	#cdc7b94b;
+}
+#blog>div>ul>li>a{
+    text-decoration: none;
+    color: #928b79;
+    padding: 10px;    
+}
+
+/* blog主頁超連結 */
+#blogHref{
+    margin-right: 70px;
+}
+#blogHref>a{
+    text-decoration: none;
+    color: #c48468;
+    font-weight: bolder;
+}
+#blogHref>a:hover{
+    opacity: 0.7;
+}
+
+@media screen and (max-width:991px){
+    #blog-left{
+        margin-right:1.5rem;
+        padding: 0;
+    }
+    #blog-left>p{
+        margin-left: 1.5rem;
+    }
+    #blog-left>p>img{
+        width: 120px;
+        height: 120px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #blog-right>div>p{
+        display: none;
+    }
+    #blog-right>div>h4{
+        font-size: 20px;
+    }
+    #blog>div>ul>li{
+        width: 80%;
+    }
+    .blog-list{
+        justify-content: center;
+    }
+}
+
+
+/* contact區 */
+#contact{
+    height: 600px;
+    margin-top:50px; 
+    margin-bottom: 100px;
+}
+/* contact標題顏色 */
+#contact >div> h3{
+    color: #686b62;
+    font-weight: bolder;
+}
+#infoArea{
+    background-color: #cdc7b94b; 
+    height:500px;
+
+}
+
+#contact-left{
+    align-self: center;
+    border-right: solid 1px #bbb9b9;
+    height:400px;
+    
+    
+}
+#contactImg{
+    width: 400px;
+    height: 200px;
+    list-style-type: none;
+    
+    margin: auto;
+    
+}
+#contactImg>ul>li>a{
+    text-decoration: none;
+}
+#contactImg>ul>li>a>img:hover{
+    opacity: 0.7;
+}
+#contactImg>ul>li>a>img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+#contactImg>ul>li{
+    display: inline;
+    align-self: center;
+
+}
+#contact-right >div> form>input{
+    border: none;
+    background-color: #cdc7b98f;
+    width: 20vw;
+}
+
+#comment{
+    height: 100px;
+}
+
+#contact-right >div> form>input:focus,textarea:focus{
+    outline: none;
+    border-bottom:solid 1px #bbb9b9 ;
+    background-color: #cdc7b900;
+}
+
+
+#textBox>form{
+    margin-left: 13%; 
+    font-size: 14px;     
+}
+#textBox>form>input:hover{
+    opacity: 0.7;
+}
+
+#contact-left, #contact-right{
+    color:#928b79;
+}
+#submitBtn{
+    margin-top: 40px;
+    background-color: #c48468;
+    color: #f3f3f3;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    padding: 8px;
+}
+#submitBtn:hover{
+    opacity: 0.7;
+}
+
+/* 網頁縮到最小RWD */
+@media screen and (max-width:991px){
+    #contact{
+        margin-bottom: 100px;
+        align-self: center;
+        height: 800px;
+        
+    }
+
+    #contact-left{
+        margin-top:-10px;
+        height: 120px;
+        border:none;
+        text-align: center;
+    }
+    #ctImgtitle{
+        margin-top:-30px;
+    }
+    #ctImgtitle>ul{
+        justify-content: center;
+    }
+    #infoArea{
+        height: 750px;
+        vertical-align: center;
+        margin-bottom: 100px;
+    }
+    #contactImg{
+        width: 100%;
+        margin-top: -30px;
+    }
+    #contact-right >div> form>input{
+        width: 40vw;
+    }
+    #textBox>form{
+        margin-left: 7%;    
+    }
+    #footer{
+        margin-top: 100px;
+    }
+
+}
+/* 手機模式RWD */
+@media screen and (max-width:415px){
+    #contact-right >div> form>input{
+        width: 55vw;
+    }
+    #textBox>form{
+        margin-left: 10%;    
+    }
+    #contactImg>ul>li>a>img{
+        width: 36px;
+        height: 36px;
+        margin: 10px;
+    }
+}
+#footer{
+    
+    height:30px;
+    display: block;
+    color: #686b62;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+
+    
+
+

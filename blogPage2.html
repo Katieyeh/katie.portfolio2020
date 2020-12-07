@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="_css/bootstrap.min.css">
+    <link rel="stylesheet" href="blogPage.css">
+    <script src="_js/jquery.min.js"></script>
+    <script src="_js/popper.min.js"></script>
+    <script src="_js/bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#mylist">
+    <div class="container-fluid p-0">
+        <!-- 最上面navbar -->
+        <nav class="navbar navbar-expand-lg d-flex sticky-top">
+            <div class="container">
+                <!-- nav-首頁logo -->
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="navbar-brand " href="blogHomePage.html">
+                            <img src="Link/logo.svg" width="120"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </li>
+                </ul>
+                <!-- nav-search-icon -->
+                <ul class=" navbar-nav ml-auto">
+                    <li class="s-icon">
+                        <input type="text" placeholder="Search . . ." required>
+                    </li>
+                </ul>
+                <span id="bugerIcon" onclick="openNav()">&#9776;</span>
+
+
+            </div>
+
+        </nav>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="web.html#index">HOME</a>
+                <a href="web.html#profile">PROFILE</a>
+                <a href="web.html#works">WORKS</a>
+                <a href="blogHomePage.html">BLOG</a>
+                <a href="web.html#contact">CONTACT</a>
+            </div>
+        </div>
+        <div id="content" class="row">
+            <div id="blogImg" class="col-xl-12" style="background-image: url(img/photography/166929D8-BB9D-4E84-B6BE-D3DB9F31C0CE.JPG);"></div>
+            <!-- 文章區 -->
+            <div id="article" class="col-xl-8">
+                <div>
+                    <p>2020.9.08</p>
+                    <h1>忘憂谷一日遊</h1>
+                </div>
+                <section>
+                    譚嗣同說過一句發人省思的話，我自橫刀向天笑，去留肝膽兩崑崙。
+                    這激勵了我。而這些並不是完全重要，更加重要的問題是，在這種不可避免的衝突下，我們必須解決這個問題。
+                    我們都有個共識，若問題很困難，那就勢必不好解決。艾彌爾曾經提過，是工作使人生有味。這讓我的思緒清晰了。
+                    程式寫不出來怎麼辦，到底應該如何實現。既然如此，當你搞懂後就會明白了。這是不可避免的。
+                    加里寧曾提出，決不要把他們教育成悶悶不樂，過早就想變為成年的人。他會這麼說是有理由的。
+                    那麼，契可夫說過一句著名的話，對美和崇高的追求是少兒的天性，這方面為教師和家長開闢了廣闊的天地。
+                    這段話雖短，卻足以改變人類的歷史。程式寫不出來怎麼辦的存在，令我無法停止對他的思考。
+                    <br>
+                    黑塞人曾經提到過，有勇氣承擔命運這才是英雄好漢。這段話令我陷入了沈思。
+                    經過上述討論，世界需要改革，需要對程式寫不出來怎麼辦有新的認知。
+                    儘管程式寫不出來怎麼辦看似不顯眼，卻佔據了我的腦海。如果別人做得到，那我也可以做到。
+                    說到程式寫不出來怎麼辦，你會想到什麼呢？若無法徹底理解程式寫不出來怎麼辦，恐怕會是人類的一大遺憾。
+                    愛獻生說過一句很有意思的話，不要嘲笑鞋匠又黑又粗的拇指。這似乎解答了我的疑惑。問題的關鍵看似不明確，但想必在諸位心中已有了明確的答案。
+                    做好程式寫不出來怎麼辦這件事，可以說已經成為了全民運動。阿格農在不經意間這樣說過，閒暇是霓裳，不宜常穿用。這段話對世界的改變有著深遠的影響。
+                    問題的核心究竟是什麼？程式寫不出來怎麼辦對我來說有著舉足輕重的地位，必須要嚴肅認真的看待。
+                    Fr說過一句很有意思的話ncis B說過一句很有意思的話con說過一句很有意思的話，愛令智昏。這把視野帶到了全新的高度。
+
+                </section>
+                <div id="changePage" class="d-flex justify-content-center text-center">
+                    <p><a href="blogPage1.html">1</a></p>
+                    <p><a href="blogPage2.html">2</a></p>
+                    <p><a href="blogPage3.html">3</a></p>
+                    <p><a href="blogPage4.html">4</a></p>
+                    <p>...</p>
+                    <p><a href="blogPage4.html">10</a></p>
+                    <p><a href="blogPage4.html">Last &gt;</a></p>
+                </div>
+            </div>
+            <!-- 側邊列表區 -->
+            <div id="sideRight" class="col-xl-4">
+                <div id="sideList">
+                    <div>
+                        <p>/ Recent Entry 近期更新 /</p>
+                    </div>
+                    <div id="listTitle">
+                        <li><a href="blogPage1.html">/ 台中網美店</a></li>
+                        <li><a href="blogPage2.html">/ 忘憂谷一日遊</a></li>
+                        <li><a href="blogPage3.html">/ 程式寫不出來怎麼辦？</a></li>
+                        <li><a href="blogPage4.html">/ 台幣戰士-OUTLET篇</a></li>
+                        <li><a href="blogPage4.html">/ 台幣戰士-日本篇</a></li>
+                    </div>
+                </div>
+                <div id="sideList" class="mt-5">
+                    <div>
+                        <p>/ Category 文章類別 /</p>
+                    </div>
+                    <div id="listTitle">
+                        <li>/ 旅行遊記</li>
+                        <li>/ 插畫心得</li>
+                        <li>/ 美食地圖</li>
+                        <li>/ 程式系列</li>
+                        <li>/ 雜七雜八</li>
+                    </div>
+                </div>
+                <div id="sideList" class="mt-5">
+                    <div>
+                        <p>/ Keywords 關鍵字分類 /</p>
+                    </div>
+                    <div id="keyWords">
+                        <span>
+                            <input type="checkbox" name="type01" id="t01"></input>
+                            <label for="t01">遊記</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="type02" id="t02"></input>
+                            <label for="t02">插畫</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="type03" id="t03"></input>
+                            <label for="t03">美食</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="type04" id="t04"></input>
+                            <label for="t04">程式</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="type05" id="t05"></input>
+                            <label for="t05">雜記</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <a href="#blogImg"><input id="topBtn" type="button"></a>
+                </div>
+
+            </div>
+        </div>
+        <div id="footer">
+            <div>
+                <p class="pm-5">Copyright © 2020 Katie Yeh</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="blogPage.js"></script>
+
+
+
+</body>
+
+</html>
